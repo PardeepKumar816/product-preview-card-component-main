@@ -1,0 +1,129 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-card-1 {
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-card-1 img {
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+}
+
+.custom-card-2 {
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.card-title {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    margin: 14px 10px 10px;
+}
+
+.card-heading {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.7rem;
+    margin: 0 10px 8px;
+}
+
+.card-body-text {
+    font-size: 0.875rem;
+    color: hsl(228, 12%, 48%);
+    margin: 0 10px 12px;
+}
+
+.price-tag {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price-tag-1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.6rem;
+    color: hsl(158, 36%, 37%);
+    margin: 0 10px 10px;
+}
+
+.price-tag-2 {
+    margin: 0 0 8px;
+    font-size: 0.7rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+}
+
+.custom-button .btn {
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 8px;
+    padding: 10px 0;
+}
+
+.custom-button .btn p {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0 8px 0;
+}
+
+.custom-card-1 img {
+    content: url('images/image-product-desktop.jpg');
+}
+
+@media (max-width: 576px) {
+    .custom-card-1 img {
+        content: url('images/image-product-mobile.jpg');
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+        height: 0;
+    }
+
+    .custom-card-1 {
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        border-bottom-left-radius: 0%;
+    }
+
+    .custom-card-1 img {
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        border-bottom-left-radius: 0%;
+    }
+
+    body {
+        background-color: hsl(30, 38%, 92%);
+        margin: 0 0;
+        padding: 40px 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
+/* @media (min-width: 992px) and (max-width: 1199px) {
+    .custom-card-2 {
+        height: 300px;
+    }
+} */
